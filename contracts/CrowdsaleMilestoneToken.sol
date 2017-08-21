@@ -65,7 +65,6 @@ contract CrowdsaleMilestoneToken is BasicToken {
             lastTimestamp = milestones[i].time;
         }
         
-        // If price = 0 payments should be throw
         if(milestones[milestoneCount - 1].price != 0) {
             throw;
         }
